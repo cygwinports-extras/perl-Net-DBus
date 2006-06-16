@@ -1,0 +1,127 @@
+perl-Net-DBus 
+------------------------------------------- 
+Net::DBus provides a Perl XS API to the dbus inter-application
+messaging system. The Perl API covers the core base level 
+of the dbus APIs, not concerning itself yet with the GLib
+or Qt wrappers.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  libdbus1_2-0.60-1
+  perl-5.8.7-5
+  perl-XML-Grove-0.46alpha-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  binutils-20050610-1
+  gcc-core-3.4.4-1
+  make-3.80-1
+  pkgconfig-0.17.2-2
+
+Canonical homepage:
+  http://search.cpan.org/~danberr/Net-DBus/
+
+Canonical download:
+  http://www.cpan.org/authors/id/D/DA/DANBERR/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-Net-DBus-0.33.2-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-Net-DBus-0.33.2-1.cygport all
+
+This will create:
+  /usr/src/perl-Net-DBus-0.33.2-1-src.tar.bz2
+  /usr/src/perl-Net-DBus-0.33.2-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/perl-Net-DBus.sh
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Binding/Bus.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Binding/Connection.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Binding/Introspector.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Binding/Iterator.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Binding/Message/Error.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Binding/Message/MethodCall.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Binding/Message/MethodReturn.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Binding/Message/Signal.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Binding/Message.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Binding/Server.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Binding/Value.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Binding/Watch.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Callback.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Dumper.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Exporter.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Object.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Reactor.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/RemoteObject.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/RemoteService.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Service.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Test/MockConnection.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Test/MockObject.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Tutorial/ExportingObjects.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Tutorial/UsingObjects.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Net/DBus/Tutorial.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Net/DBus/.packlist
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Net/DBus/DBus.bs
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Net/DBus/DBus.dll
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Net/DBus/libDBus.dll.a
+  /usr/share/doc/Cygwin/perl-Net-DBus-0.33.2.README
+  /usr/share/doc/perl-Net-DBus-0.33.2/AUTHORS
+  /usr/share/doc/perl-Net-DBus-0.33.2/Changes
+  /usr/share/doc/perl-Net-DBus-0.33.2/COPYING
+  /usr/share/doc/perl-Net-DBus-0.33.2/README
+  /usr/share/man/man3/Net.DBus.3pm.gz
+  /usr/share/man/man3/Net.DBus.Binding.Bus.3pm.gz
+  /usr/share/man/man3/Net.DBus.Binding.Connection.3pm.gz
+  /usr/share/man/man3/Net.DBus.Binding.Introspector.3pm.gz
+  /usr/share/man/man3/Net.DBus.Binding.Iterator.3pm.gz
+  /usr/share/man/man3/Net.DBus.Binding.Message.3pm.gz
+  /usr/share/man/man3/Net.DBus.Binding.Message.Error.3pm.gz
+  /usr/share/man/man3/Net.DBus.Binding.Message.MethodCall.3pm.gz
+  /usr/share/man/man3/Net.DBus.Binding.Message.MethodReturn.3pm.gz
+  /usr/share/man/man3/Net.DBus.Binding.Message.Signal.3pm.gz
+  /usr/share/man/man3/Net.DBus.Binding.Server.3pm.gz
+  /usr/share/man/man3/Net.DBus.Binding.Value.3pm.gz
+  /usr/share/man/man3/Net.DBus.Binding.Watch.3pm.gz
+  /usr/share/man/man3/Net.DBus.Callback.3pm.gz
+  /usr/share/man/man3/Net.DBus.Dumper.3pm.gz
+  /usr/share/man/man3/Net.DBus.Exporter.3pm.gz
+  /usr/share/man/man3/Net.DBus.Object.3pm.gz
+  /usr/share/man/man3/Net.DBus.Reactor.3pm.gz
+  /usr/share/man/man3/Net.DBus.RemoteObject.3pm.gz
+  /usr/share/man/man3/Net.DBus.RemoteService.3pm.gz
+  /usr/share/man/man3/Net.DBus.Service.3pm.gz
+  /usr/share/man/man3/Net.DBus.Test.MockConnection.3pm.gz
+  /usr/share/man/man3/Net.DBus.Test.MockObject.3pm.gz
+  /usr/share/man/man3/Net.DBus.Tutorial.3pm.gz
+  /usr/share/man/man3/Net.DBus.Tutorial.ExportingObjects.3pm.gz
+  /usr/share/man/man3/Net.DBus.Tutorial.UsingObjects.3pm.gz
+  /usr/share/perl/cygwin-pods/Net-DBus.pod
+
+------------------
+
+Port Notes:
+
+----- version 0.33.2-1 -----
+Version bump.
+
+----- version 0.33.1-1 -----
+Version bump.
+
+----- version 0.32.2-1 -----
+Version bump.
+
+----- version 0.32.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
